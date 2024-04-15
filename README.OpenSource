@@ -1,0 +1,11 @@
+[
+    {
+        "Name":"lame",
+        "License":"LGPL",
+        "License File":"LICENSE",
+        "Version Number":"3.100",
+        "Owner":"yangpeng43@huawei.com",
+        "Upstream URL":"https://github.com/lameproject/lame.git",
+        "Description":"LAME is a high quality MPEG Audio Layer III (MP3) encoder licensed under the LGPL."
+    }
+]
