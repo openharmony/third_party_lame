@@ -79,6 +79,9 @@ extern  "C" {
 # define        SQRT2                   1.41421356237309504880
 #endif
 
+#ifndef HAVE_IEEE754_FLOAT32_T
+    typedef float ieee754_float32_t;
+#endif
 
 #define         CRC16_POLYNOMIAL        0x8005
 
