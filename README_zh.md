@@ -1,8 +1,8 @@
-# lame
+# LAME
 
 LAME是LGPL协议授权的高质量MP3编码器。
 
-OpenHarmony上引入LAME主要用于MP3编码。
+OpenHarmony引入LAME主要用于MP3编码。
 
 ## 主要目录结构
 
@@ -21,9 +21,9 @@ LICENSE          #版权补充说明
 README.md        #软件说明
 ```
 
-## OpenHarmony对于lame的适配
+## OpenHarmony对于LAME的适配
 
-lame引入openharmony的thirdparty目录下，
+LAME位于OpenHarmony的thirdparty目录下，
 使用OpenHarmony中依赖部件的方式进行编译。
 1. 主干代码下载
    ```
@@ -50,4 +50,4 @@ lame引入openharmony的thirdparty目录下，
 本项目遵从[COPYING](https://gitee.com/openharmony-sig/third_party_lame/blob/master/COPYING)和[LICENSE](https://gitee.com/openharmony-sig/third_party_lame/blob/master/LICENSE)中所描述的许可证。
 
 ## 相关仓
-[lame](https://gitee.com/openharmony-sig/third_party_lame)
+[LAME](https://gitee.com/openharmony-sig/third_party_lame)
