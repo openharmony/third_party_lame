@@ -1,6 +1,6 @@
 # LAME
 
-LAME是LGPL协议授权的高质量MP3编码器。LAME于1998年初次发布，此后进行了多次改进，引入了新的心理声学模型，被公认为一款出色的MP3编码器，在业界应用广泛。
+LAME是LGPL协议授权的高质量MP3编码器。LAME于1998年发布，此后进行了多次改进，引入了新的心理声学模型，被公认为一款出色的MP3编码器，在业界应用广泛。
 
 [LAME官网地址](https://lame.sourceforge.io)为[https://lame.sourceforge.io](https://lame.sourceforge.io)，您可以通过访问它获取更多关于LAME项目的信息。
 
