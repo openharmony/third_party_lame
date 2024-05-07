@@ -4,7 +4,7 @@ LAME是LGPL协议授权的高质量MP3编码器。LAME于1998年初次发布，�
 
 [LAME官网地址](https://lame.sourceforge.io)为[https://lame.sourceforge.io](https://lame.sourceforge.io)，您可以通过访问它获取更多关于LAME项目的信息。
 
-OpenHarmony引入第三方开源软件LAME主要用于对数字音频进行MP3编码。LAME最近更新的发布版本为3.100，这也是OpenHarmony引入的版本。
+OpenHarmony引入第三方开源软件LAME主要用于对数字音频进行MP3编码。LAME最近更新发布的版本为3.100，这也是OpenHarmony引入的版本。
 
 ## 主要目录结构
 
