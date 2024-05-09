@@ -60,16 +60,15 @@ Note:If the text contains special characters, please escape them according to th
     <oatconfig>
          <policylist>
             <policy name="projectPolicy">
-                <policyitem type="license" name="LGPL" path="libmp3lame/.*" rule="may" desc="The files involved are under LGPL protocol."/>
-                <policyitem type="license" name="LGPL" path="include/lame.h" rule="may" desc="The files involved are under LGPL protocol."/>
-                <policyitem type="license" name="GPL" path="libmp3lame/fft.c" rule="may" desc="The files involved are under GPL protocol."/>
-                <policyitem type="copyright" name="*" path="libmp3lame/.*" rule="may" desc="copyright as described in file"/>
-                <policyitem type="copyright" name="*" path="include/lame.h" rule="may" desc="copyright as described in file"/>
+                <policyitem type="compatibility" name="LGPL-2.0+" path="libmp3lame/.*" rule="may" group="defaultGroup" filefilter="defaultPolicyFilter" desc="reason"/>
+                <policyitem type="compatibility" name="GPLStyleLicense" path="libmp3lame/.*" rule="may" group="defaultGroup" filefilter="defaultPolicyFilter" desc="reason"/>
+                <policyitem type="compatibility" name="LGPLStyleLicense" path="libmp3lame/.*" rule="may" group="defaultGroup" filefilter="defaultPolicyFilter" desc="reason"/>
+                <policyitem type="compatibility" name="LGPL-2.0+" path="include/.*" rule="may" group="defaultGroup" filefilter="defaultPolicyFilter" desc="reason"/>
+                <policyitem type="compatibility" name="LGPL-2.0+" path="mpglib/.*" rule="may" group="defaultGroup" filefilter="defaultPolicyFilter" desc="reason"/>
             </policy>
         </policylist>
         <filefilterlist>
             <filefilter name="defaultFilter">
-                <filteritem type="filepath" name="doc/.*" desc="doc, not used"/>
                 <filteritem type="filepath" name="ACM/.*" desc="ACM codec in Windows OS, not used"/>
                 <filteritem type="filepath" name="mac/.*" desc="for MAC OS, not used"/>
                 <filteritem type="filepath" name="macosx/.*" desc="for MAC OS, not used"/>
@@ -80,41 +79,21 @@ Note:If the text contains special characters, please escape them according to th
                 <filteritem type="filepath" name="dshow/.*" desc="DirectShow Filter, not used"/>
                 <filteritem type="filepath" name="frontend/.*" desc="for lame frontend software, not used"/>
                 <filteritem type="filepath" name="test/.*" desc="for test, not used"/>
-                <filteritem type="filepath" name="mpglib/.*" desc="for decoding, not used"/>
                 <filteritem type="filepath" name="misc/.*" desc="GUI, not used"/>
-                <filteritem type="filepath" name="include/lame.def" desc="def file for DLL, not used"/>
-                <filteritem type="filepath" name="include/libmp3lame.sym" desc=".sym file, not used"/>
                 <filteritem type="filepath" name="LICENSE" desc="LICENSE file" />
-                <filteritem type="filename" name="README.WINGTK" desc="README file" />
-                <filteritem type="filename" name="README*" desc="README file" />
                 <filteritem type="filename" name="COPYING" desc="COPYING file" />
-                <filteritem type="filename" name="DEFINES" desc="DEFINES file" />
-                <filteritem type="filename" name="API" desc="API introduction" />
-                <filteritem type="filename" name="HACKING" desc="introduction file, not used" />
-                <filteritem type="filename" name="TODO" desc="TODO file, not used" />
-                <filteritem type="filename" name="INSTALL" desc="API introduction" />
                 <filteritem type="filename" name="INSTALL.configure" desc="introduction" />
                 <filteritem type="filename" name="USAGE" desc="USAGE file, not used" />
                 <filteritem type="filename" name="Makefile.*" desc="Makefile, not uesd" />
-                <filteritem type="filename" name="install-sh" desc="install sh file, not used" />
                 <filteritem type="filename" name="missing" desc="Common wrapper for a few potentially missing GNU programs, not used" />
-                <filteritem type="filename" name="STYLEGUIDE" desc="lame styleguild, not used" />
                 <filteritem type="filename" name="config*.*" desc="config files, not used" />
                 <filteritem type="filename" name="configure" desc="config files, not used" />
                 <filteritem type="filename" name="compile" desc="Wrapper for compilers which do not understand '-c -o', not used" />
                 <filteritem type="filename" name="depcomp" desc="compile file, not used" />
-                <filteritem type="filename" name="acinclude.m4" desc="for compile, not used" />
-                <filteritem type="filename" name="lame.bat" desc="bat file for Windows OS, not used" />
-                <filteritem type="filename" name="make_changelog.sh" desc="to change log, not used" />
-            </filefilter>
-            <filefilter name="defaultPolicyFilter">
-                <filteritem  type="filepath" name="libmp3lame/id3tag.h" desc="no license header natively"/>
-                <filteritem  type="filepath" name="libmp3lame/lame_global_flags.h" desc="no license header natively"/>
-                <filteritem  type="filepath" name="libmp3lame/lameerror.h" desc="no license header natively"/>
             </filefilter>
             <filefilter name="binaryFileTypePolicyFilter">
                 <filteritem type="filename" name="*.mp3|*.wav" desc="Resource binary." />
-                <filteritem type="filename" name="*.png|*.ico" desc="Resource and logo binary." />
+                <filteritem type="filename" name="*.png|*.ico|*.gif" desc="Resource and logo binary." />
             </filefilter>
         </filefilterlist>
     </oatconfig>
