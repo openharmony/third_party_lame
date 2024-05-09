@@ -1,9 +1,0 @@
-{
-    "patches": [
-        {
-            "project":"multimedia_av_codec",
-            "path":"foundation/multimedia/av_codec",
-            "pr_url":"https://gitee.com/openharmony/multimedia_av_codec/pulls/1684"
-        }
-    ]
-}
