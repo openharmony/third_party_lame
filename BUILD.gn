@@ -61,7 +61,7 @@ config("lame_config") {
 }
 
 ohos_shared_library("lame") {
-  configs = [
+  public_configs = [
     ":lame_config",
   ]
 
