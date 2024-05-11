@@ -13,11 +13,8 @@
 
 # lame build
 import("//build/ohos.gni")
-
 config("lame_config") {
-    include_dirs = [
-    "//third_party/lame/include",
-  ]
+  include_dirs = [ "//third_party/lame/include" ]
 
   cflags = [
     "-O2",
@@ -61,31 +58,29 @@ config("lame_config") {
 }
 
 ohos_shared_library("lame") {
-  public_configs = [
-    ":lame_config",
-  ]
+  public_configs = [ ":lame_config" ]
 
   sources = [
-  "//third_party/lame/libmp3lame/bitstream.c",
-  "//third_party/lame/libmp3lame/encoder.c",
-  "//third_party/lame/libmp3lame/fft.c",
-  "//third_party/lame/libmp3lame/gain_analysis.c",
-  "//third_party/lame/libmp3lame/id3tag.c",
-  "//third_party/lame/libmp3lame/lame.c",
-  "//third_party/lame/libmp3lame/mpglib_interface.c",
-  "//third_party/lame/libmp3lame/newmdct.c",
-  "//third_party/lame/libmp3lame/presets.c",
-  "//third_party/lame/libmp3lame/psymodel.c",
-  "//third_party/lame/libmp3lame/quantize.c",
-  "//third_party/lame/libmp3lame/quantize_pvt.c",
-  "//third_party/lame/libmp3lame/reservoir.c",
-  "//third_party/lame/libmp3lame/set_get.c",
-  "//third_party/lame/libmp3lame/tables.c",
-  "//third_party/lame/libmp3lame/takehiro.c",
-  "//third_party/lame/libmp3lame/util.c",
-  "//third_party/lame/libmp3lame/vbrquantize.c",
-  "//third_party/lame/libmp3lame/VbrTag.c",
-  "//third_party/lame/libmp3lame/version.c",
+    "//third_party/lame/libmp3lame/VbrTag.c",
+    "//third_party/lame/libmp3lame/bitstream.c",
+    "//third_party/lame/libmp3lame/encoder.c",
+    "//third_party/lame/libmp3lame/fft.c",
+    "//third_party/lame/libmp3lame/gain_analysis.c",
+    "//third_party/lame/libmp3lame/id3tag.c",
+    "//third_party/lame/libmp3lame/lame.c",
+    "//third_party/lame/libmp3lame/mpglib_interface.c",
+    "//third_party/lame/libmp3lame/newmdct.c",
+    "//third_party/lame/libmp3lame/presets.c",
+    "//third_party/lame/libmp3lame/psymodel.c",
+    "//third_party/lame/libmp3lame/quantize.c",
+    "//third_party/lame/libmp3lame/quantize_pvt.c",
+    "//third_party/lame/libmp3lame/reservoir.c",
+    "//third_party/lame/libmp3lame/set_get.c",
+    "//third_party/lame/libmp3lame/tables.c",
+    "//third_party/lame/libmp3lame/takehiro.c",
+    "//third_party/lame/libmp3lame/util.c",
+    "//third_party/lame/libmp3lame/vbrquantize.c",
+    "//third_party/lame/libmp3lame/version.c",
   ]
 
   part_name = "lame"
