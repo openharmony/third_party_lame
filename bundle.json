@@ -2,7 +2,7 @@
     "name": "@ohos/lame",
     "description": "lame is a high quality MP3 encoder.",
     "version": "3.100",
-    "license": "LGPL V2.0",
+    "license": "LGPL-2.0",
     "publishAs": "code-segment",
     "segment": {
         "destPath": "third_party/lame"
