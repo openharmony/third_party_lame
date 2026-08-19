@@ -58,6 +58,7 @@ config("lame_config") {
 }
 
 ohos_shared_library("lame") {
+  version_script = "//third_party/lame/lame.versionscript"
   public_configs = [ ":lame_config" ]
 
   sources = [
